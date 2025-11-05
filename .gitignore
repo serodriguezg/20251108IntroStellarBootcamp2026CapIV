@@ -1,0 +1,44 @@
+#Soroban Stellar contract
+# Rust's output directory
+/contract/get_set_helloworld/target
+
+# Local settings
+/contract/get_set_helloworld/.soroban
+/contract/get_set_helloworld/.stellar
+
+#NextJS
+/web/node_modules/
+/web/.pnp
+/web/.pnp.js
+
+# testing
+/web//coverage
+
+# next.js
+/web/.next/
+/web/out/
+
+# production
+/web/build
+
+# misc
+/web/.DS_Store
+/web/*.pem
+
+# debug
+/web/npm-debug.log*
+/web/yarn-debug.log*
+/web/yarn-error.log*
+/web/.pnpm-debug.log*
+
+# local env files
+/web/.env*.local
+
+# vercel
+/web/.vercel
+
+# typescript
+/web/*.tsbuildinfo
+/web/next-env.d.ts
+
+# End of https://www.toptal.com/developers/gitignore/api/nextjs
