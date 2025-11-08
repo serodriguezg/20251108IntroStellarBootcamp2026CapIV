@@ -53,9 +53,9 @@ stellar contract deploy \
 bash
 
 ```plaintext
-stellar contract invoke \  
---id get_set_message \   
---source <identity> \
+stellar contract invoke \
+--id get_set_message \
+--source-account <identity> \
 --network testnet \
 -- \
 set_message \
@@ -67,11 +67,11 @@ set_message \
 bash
 
 ```plaintext
-stellar contract invoke \  
---id  get_set_message \
---source <identity> \
+stellar contract invoke \
+--id get_set_message \
+--source-account <identity> \
 --network testnet \
--- \ 
+-- \
 get_message
 ```
 
@@ -88,11 +88,11 @@ Espera aproximadamente 10 minutos y vuelve a consultar:
 bash
 
 ```plaintext
-stellar contract invoke \  
---id get_set_message \  
---source <identity> \ 
---network testnet \   
--- \ 
+stellar contract invoke \
+--id get_set_message \
+--source-account <identity> \
+--network testnet \
+-- \
 get_message
 ```
 
