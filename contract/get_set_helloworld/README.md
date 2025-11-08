@@ -2,6 +2,17 @@
 
 Contrato inteligente simple desarrollado en Rust para la blockchain de Stellar usando Soroban SDK. Permite almacenar y recuperar mensajes con un tiempo de vida (TTL) de 10 minutos.
 
+
+##Creacion de una cuenta
+
+```plaintext
+stellar keys generate <identity>
+```
+saber cual es la cuenta:
+```plaintext
+stellar keys address <identity>
+```
+
 ## 🚀 Características
 
 * **Constructor automático**: Inicializa el contrato con un mensaje predeterminado al desplegarlo
@@ -14,7 +25,7 @@ Contrato inteligente simple desarrollado en Rust para la blockchain de Stellar u
 bash
 
 ```plaintext
-soroban contract build
+stellar  contract build
 ```
 
 El archivo WASM compilado se generará en:
