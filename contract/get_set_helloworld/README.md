@@ -39,11 +39,11 @@ target/wasm32v1-none/release/message_contract.wasm
 ### En Testnet (Recomendado para pruebas)
 
 ```plaintext
-stellar contract deploy \ 
---wasm target/wasm32v1-none/release/et_set_message.wasm \ 
---source <identity> \ 
---network testnet \
---alias get_set_message
+stellar contract deploy \
+  --wasm target/wasm32v1-none/release/get_set_message.wasm \
+  --source-account <identity> \
+  --network testnet \
+  --alias get_set_message
 ```
 
 ## 🎯 Uso del Contrato
