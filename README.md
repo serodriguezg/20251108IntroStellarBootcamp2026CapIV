@@ -101,6 +101,6 @@ Si no hay archivo de licencia, contacta al autor antes de usarlo comercialmente.
 
 ---
 
-🌌 ¡Gracias por ser parte del **Stellar Bootcamp 2026**!  
+🌌 ¡Gracias por ser parte de la **Introcuccion al Stellar Bootcamp 2026**!  
 Construyamos juntos el futuro en la red de las estrellas 💫
 
