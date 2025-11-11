@@ -5,11 +5,19 @@
  * This project uses @Incubating APIs which are subject to change.
  */
 
+
 dependencyResolutionManagement {
-    // Reuse version catalog from the main build.
-    versionCatalogs {
-        create("libs", { from(files("../gradle/libs.versions.toml")) })
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral() // <--- ¡Asegúrate de que esta línea esté presente!
+        maven("https://jitpack.io") // Opcional, pero a veces útil
+        
+        // Si tu proyecto es multiplatform (Compose Multiplatform), también podrías necesitar:
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev") 
     }
+
+    
 }
 
 rootProject.name = "build-logic"

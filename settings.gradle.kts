@@ -15,6 +15,8 @@ plugins {
     // Apply the foojay-resolver plugin to allow automatic download of JDKs
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.10.0"
 }
-
+includeBuild("build-logic") {
+    from(catalog(name = "libs"))
+}
 rootProject.name = "PayMe"
 include("app", "list", "utilities")

@@ -9,16 +9,23 @@ plugins {
     `kotlin-dsl`
 }
 
-repositories {
-    // Use the plugin portal to apply community plugins in convention plugins.
-    gradlePluginPortal()
-}
+val stellarSdkVersion = "0.35.0"
+val ktorVersion = "2.3.8" // O la versión que uses
+val kotlinVersion = "1.9.22"
 
 dependencies {
-    implementation(libs.kotlin.gradle.plugin)
-    implementation("org.stellar:java-stellar-sdk:0.35.0")
-    implementation("io.ktor:ktor-server-netty:$ktor_version")
-    implementation("io.ktor:ktor-server-core:$ktor_version")
-    implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
-    implementation("io.ktor:ktor-server-content-negotiation:$ktor_version")
+// Implementación de la librería Kotlin (anteriormente libs.kotlin.gradle.plugin)
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion") 
+
+    // Línea 21: java-stellar-sdk
+    implementation("org.stellar:java-stellar-sdk:$stellarSdkVersion") 
+    
+    // Línea 22: Dependencias Ktor
+    implementation("io.ktor:ktor-server-netty:$ktorVersion")
+    implementation("io.ktor:ktor-server-core:$ktorVersion")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+    
+    // Línea 25 (anteriormente): Ahora debería estar aquí
+    implementation("io.ktor:ktor-server-content-negotiation:$ktorVersion")
+
 }
